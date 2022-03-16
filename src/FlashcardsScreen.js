@@ -46,7 +46,15 @@ export default function FlashcardsScreen() {
       </div>
 
       <footer>
-        <p>0/4 CONCLUÍDOS</p>
+
+        {/* <p>0/4 CONCLUÍDOS</p> */}
+
+        <div className="result-text">
+          <img src="./assets/partyemoji.svg" alt="" />
+          <strong>PARABÉNS!</strong>
+        </div>
+        <span><p>Você não esqueceu de nenhum flashcard!</p></span>
+
         <div className="selected-marks ">
           <img src="./assets/redX.svg" alt="X" />
           <img src="./assets/questionmark.svg" alt="?" />
