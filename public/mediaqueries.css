@@ -1,0 +1,9 @@
+@media (min-width: 992px) {
+  .flashcards-screen .flashcards {
+    width: 680px;
+  }
+
+  .card-back div {
+    justify-content: space-evenly;
+  }
+}

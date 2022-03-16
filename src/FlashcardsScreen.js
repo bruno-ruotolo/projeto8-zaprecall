@@ -8,47 +8,56 @@ export default function FlashcardsScreen() {
 
       <div className="flashcards">
 
-        <article>
+        <article className="options">
           <p>Pergunta 1</p>
           <img src="./assets/play.svg" alt="play" />
         </article>
 
-        <article>
+        <article className="card-front">
+          <p>O que é JSX?</p>
+          <img src="./assets/roundicon.svg" alt="Icon" />
+        </article>
+
+        <article className="card-back">
+          <p>JSX é uma sintaxe para
+            escrever HTML dentro do JS</p>
+          <div>
+            <button className="bg-red">Não lembrei</button>
+            <button className="bg-orange">Quase não lembrei</button>
+            <button className="bg-green">Zap!</button>
+          </div>
+        </article>
+
+        <article className="options selected color-red">
           <p>Pergunta 2</p>
-          <img src="./assets/play.svg" alt="play" />
+          <img src="./assets/redX.svg" alt="X" />
         </article>
 
-        <article>
+        <article className="options selected color-orange">
           <p>Pergunta 3</p>
-          <img src="./assets/play.svg" alt="play" />
+          <img src="./assets/questionmark.svg" alt="?" />
         </article>
 
-        <article>
+        <article className="options selected color-green">
           <p>Pergunta 4</p>
-          <img src="./assets/play.svg" alt="play" />
-        </article>
-
-        <article>
-          <p>Pergunta 5</p>
-          <img src="./assets/play.svg" alt="play" />
-        </article>
-
-        <article>
-          <p>Pergunta 6</p>
-          <img src="./assets/play.svg" alt="play" />
-        </article>
-
-        <article>
-          <p>Pergunta 7</p>
-          <img src="./assets/play.svg" alt="play" />
-        </article>
-
-        <article>
-          <p>Pergunta 8</p>
-          <img src="./assets/play.svg" alt="play" />
+          <img src="./assets/checkmark.svg" alt="Correct" />
         </article>
 
       </div>
+
+      <footer>
+        <p>0/4 CONCLUÍDOS</p>
+        <div className="selected-marks ">
+          <img src="./assets/redX.svg" alt="X" />
+          <img src="./assets/questionmark.svg" alt="?" />
+          <img src="./assets/checkmark.svg" alt="Correct" />
+          <img src="./assets/redX.svg" alt="X" />
+          <img src="./assets/questionmark.svg" alt="?" />
+          <img src="./assets/checkmark.svg" alt="Correct" />
+          <img src="./assets/questionmark.svg" alt="?" />
+          <img src="./assets/checkmark.svg" alt="Correct" />
+        </div>
+      </footer>
     </section>
   )
 }
