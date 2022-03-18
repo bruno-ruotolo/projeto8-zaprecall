@@ -1,13 +1,14 @@
 import React from "react";
 
 export default function FlashCard(props) {
-  const { question, answer } = props;
+  const { question, answer, questionNumber } = props;
   const [changeStatus, setChangeStatus] = React.useState(1)
+
 
   if (changeStatus === 1) {
     return (
       <> <article className="options">
-        <p>Pergunta 1</p>
+        <p>Pergunta {questionNumber}</p>
         <img src="./assets/play.svg" alt="play" onClick={() => setChangeStatus(2)} />
       </article></>
     )
@@ -34,7 +35,6 @@ export default function FlashCard(props) {
       </article></>
     )
   }
-
   {/* 
       <article className="options selected color-red">
         <p>Pergunta 2</p>
