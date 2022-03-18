@@ -5,7 +5,7 @@ import FlashcardsScreen from "./FlashcardsScreen";
 function App() {
   return (
     <>
-      {/* <WelcomeScreen /> */}
+      <WelcomeScreen />
       <FlashcardsScreen />
     </>
   )
