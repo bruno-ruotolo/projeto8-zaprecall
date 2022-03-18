@@ -1,6 +1,8 @@
 import FlashCard from "./FlashCard";
+import React from "react";
 
 export default function FlashCards() {
+
   const flashCards = [
     { question: "O que é JSX?", answer: "Uma extensão de linguagem do JavaScript" },
 
@@ -10,14 +12,20 @@ export default function FlashCards() {
 
   ];
   return (
-    <>
+    <div className="flashcards">
       {
         flashCards.map((flashCard) => {
           const { question, answer } = flashCard;
-          return <FlashCard key={question} question={question} answer={answer} />
+          return (
+            < FlashCard
+              key={question}
+              question={question}
+              answer={answer}
+            />
+          )
         })
       }
-    </>
+    </div>
   );
 };
 

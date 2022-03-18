@@ -1,29 +1,41 @@
+import React from "react";
+
 export default function FlashCard(props) {
   const { question, answer } = props;
+  const [changeStatus, setChangeStatus] = React.useState(1)
 
-  return (
-    <div className="flashcards">
-      <article className="options">
+  if (changeStatus === 1) {
+    return (
+      <> <article className="options">
         <p>Pergunta 1</p>
-        <img src="./assets/play.svg" alt="play" />
-      </article>
-
-      {/* <article className="card-front">
-        <p>{question}</p>
-        <img src="./assets/roundicon.svg" alt="Icon" />
-      </article> */}
-
-      {/* <article className="card-back">
+        <img src="./assets/play.svg" alt="play" onClick={() => setChangeStatus(2)} />
+      </article></>
+    )
+  }
+  else if (changeStatus === 2) {
+    return (
+      <>
+        <article className="card-front">
+          <p>{question}</p>
+          <img src="./assets/roundicon.svg" alt="Icon" onClick={() => setChangeStatus(3)} />
+        </article>
+      </>
+    )
+  }
+  else if (changeStatus === 3) {
+    return (
+      <><article className="card-back">
         <p>{answer}</p>
         <div>
           <button className="bg-red">Não lembrei</button>
           <button className="bg-orange">Quase não lembrei</button>
           <button className="bg-green">Zap!</button>
         </div>
-      </article> */}
+      </article></>
+    )
+  }
 
-
-      {/* 
+  {/* 
       <article className="options selected color-red">
         <p>Pergunta 2</p>
         <img src="./assets/redX.svg" alt="X" />
@@ -38,8 +50,4 @@ export default function FlashCard(props) {
         <p>Pergunta 4</p>
         <img src="./assets/checkmark.svg" alt="Correct" />
       </article> */}
-
-    </div>
-  )
-
-}
+};
