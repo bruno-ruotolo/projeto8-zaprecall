@@ -33,7 +33,5 @@ export default function FlashCardsInformations() {
       answer: "Fazer o React atualizadar e renderizar a tela novamente, ao mudar um estado"
     },
   ];
-
-  flashCards.sort(() => Math.random() - 0.5);
   return flashCards;
 }

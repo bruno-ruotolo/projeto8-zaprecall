@@ -1,9 +1,9 @@
 import React from "react"
-
 export default function WelcomeScreen() {
   const [changeScreen, setChangeScreen] = React.useState(false);
 
   if (changeScreen) {
+
     return <></>
   } else {
     return (

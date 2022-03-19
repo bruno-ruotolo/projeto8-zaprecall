@@ -1,15 +1,5 @@
 import ReactDom from "react-dom";
-import WelcomeScreen from "./WelcomeScreen";
-import FlashcardsScreen from "./FlashcardsScreen";
-
-function App() {
-  return (
-    <>
-      <WelcomeScreen />
-      <FlashcardsScreen />
-    </>
-  )
-}
+import App from "./components/App"
 
 let rootClass = document.querySelector(".root");
 
