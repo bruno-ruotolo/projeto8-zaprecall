@@ -1,5 +1,5 @@
 import React from "react";
-import FlashCardsInformations from "../FlashCards/FlashCardsInformations";
+import FlashCardsInformations from "../Main/FlashCardsInformations";
 import QuestionCounter from "./QuestionsCounter";
 import Results from "./Results";
 
@@ -8,13 +8,13 @@ export default function Footer(props) {
   const questionNumber = FlashCardsInformations().length;
 
   return (
-    < footer >
+    <footer>
 
-      {total === questionNumber ? <Results icons={icons} /> : <QuestionCounter total={total} totalQuestion={questionNumber} />}
+      {total === questionNumber ? <Results icons={icons} />
+        : <QuestionCounter total={total} totalQuestion={questionNumber} />}
 
-      <div className="selected-marks ">
+      <div className="selected-marks">
         {icons}
-
       </div>
     </footer >
   )
