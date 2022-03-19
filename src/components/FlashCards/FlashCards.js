@@ -1,6 +1,6 @@
 import FlashCard from "./FlashCard";
 import React from "react";
-import Results from "./Results"
+import Footer from "./../Footer/Footer"
 
 export default function FlashCards(props) {
   const shuffleCards = props.shuffleCards
@@ -9,7 +9,7 @@ export default function FlashCards(props) {
 
   return (
     <>
-      <Results total={total} icons={icon} />
+      <Footer total={total} icons={icon} />
       <div className="flashcards">
         {
           shuffleCards.map((flashCard, index) => {
