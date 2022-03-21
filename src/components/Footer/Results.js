@@ -4,7 +4,7 @@ import Sad from "../../assets/sad.svg"
 export default function Results(props) {
   const { icons } = props;
 
-  for (let i = 1; i < icons.length; i++) {
+  for (let i = 0; i < icons.length; i++) {
     if (icons[i].props.src.includes("redX")) {
       return (
         <>
