@@ -13,7 +13,7 @@ Try it out at https://projeto8-zaprecall-kzcup0bbd-bruno-ruotolo.vercel.app
 
 ## About
 
-This is a Application that using the concept of flashcards was developed a application to improve memory and help on studies, some features are:
+Using the concept of flashcards was developed a application to improve memory and help on studies, some features are:
 
 - Dinamic Pages
 - Dinamic Content using React States
